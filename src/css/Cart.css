@@ -1,0 +1,160 @@
+.carousel {
+    margin-bottom: 4rem;
+  }
+  
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    
+  }
+  
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 42rem;
+  }
+  
+  .carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 42rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+    -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .marketing h2 {
+    font-weight: 400;
+  }
+  
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  .table{
+    width: 90%;
+  }
+  
+  /* Featurettes
+    ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  .hinhdaidien{
+    width: 50px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  
+#cartIcon{
+  position: relative;
+}
+
+.countCart{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #802e0381;
+}
+.showCartPay{
+  width: 20% !important;
+  opacity: 1 !important;
+}
+.FormCheckout{
+  transition: .5s;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 0px;
+  overflow: hidden;
+  height: 80%;
+  width: 0%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.FormCheckout form{
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(20, 233, 226, 0.29);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.FormCheckout form h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.FormCheckout form .boxInput{
+  margin-top: 10px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.FormCheckout form .boxInput label{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.FormCheckout form .boxInput input{
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submitCart{
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px ;
+  font-size: 15px;
+  margin-left: 5%;
+}
+
+.submitCart:hover{
+  background-color: rgba(14, 211, 211, 0.423);
+}
+
+.none{
+  display: none !important;
+}

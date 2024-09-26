@@ -1,0 +1,310 @@
+.mainbody{
+    margin-top: 140px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.home{
+    padding-top: 60px;
+    width: 90%;
+    
+    margin: auto;
+    padding: 0 !important;
+    position: relative;
+}
+
+.slider{
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    height: 500px;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+#Next,#Prev{
+    position: absolute;
+    transition: .5s;
+    height:70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 25px);
+    border: 1px solid #0000;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: #000;
+    cursor: pointer;
+}
+
+#Next:hover,#Prev:hover{
+    background: #00000024;
+}
+
+#Next{
+    right: -35px;
+}
+
+#Prev{
+    left: -35px;
+   
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.ItemBookS{
+    transition: .5s;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-content: center;
+   justify-content: center;
+   justify-items: start;
+}
+
+.contentS{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding-left: 45px;
+    justify-content: center;
+}
+
+.contentS .NameBookS{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.contentS .ContentBookS{
+    min-height: 20px;
+    height: 215px;
+    word-break: break-all;
+    font-size: 18px;
+    color: white;
+}
+.ItemBookS .bookImg{
+    display: grid;
+    justify-items:center;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bookImg img{
+    border-radius: 5px;
+    width: 300px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.listItem{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #23d5ab; */
+  
+}
+
+.ListLayout{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.ItemList{
+    padding: 10px 0;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.438);
+    border: 1px solid #000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.listItem .ItemList img{
+    height:200px;
+    border-radius: 5px;
+}
+
+.ItemList h3{
+    margin-top: 10px;
+    height: 56px;
+    width: 50%;
+    font-size: 20px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.ItemList .Price{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.ItemList .lBtnACrat{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:2px 0 5px ;
+    cursor: pointer;
+}
+
+.ItemList .lBtnACrat .btnACrat{
+    padding: 5px 10px;
+    text-align: center;
+    width: 40%;
+    background-color: #23d5ab;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.ItemList:hover{
+    background-color: #23d5ab3a;
+}
+
+.lBtnACrat .btnACrat:hover{
+    background-color: #23a6d5;
+    color: aliceblue;
+}
+.loginComple-btn{
+    position: relative;
+} 
+
+.OptionLogin{
+    transition: 0.5s;
+    display: none !important;
+    background-color:rgba(35, 165, 213, 0.638);
+    position: absolute;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.loginComple-btn:hover .OptionLogin{
+    display: grid !important;
+    align-items: center;
+    justify-content: center;
+} 
+.OptionLogin ul{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.OptionLogin ul li{
+    width: 100%;
+    list-style-type: none;
+    font-size: 16px;
+    color: #fff !important;
+}
+
+.OptionLogin:hover{
+    background-color: #23d5ab;
+}
+
+
+.showCart{
+    transform: translateX(0) !important;
+    width: 400px !important;
+}
+
+.cartForm{
+    position: fixed;
+    transition: 0.5s;
+    width: 0px;
+    transform: translateX(calc(100% + 400px));
+    height: 600px;
+    border-radius: 10px 0 0 10px;
+    right: 0;
+    background-color: #f1f1f1;
+    z-index: 3000;
+}
+.cartForm .TitleCart{
+    margin: 0!important;
+}
+.cartForm .layoutCart{
+    text-align: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:12% 22% 22% 22% 22%;
+    justify-content: center;
+    align-items: center;
+}
+.layoutCart h3{
+    overflow: hidden;
+}
+.layoutCart .LIMGCart{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.layoutCart img{
+    height: 50px;
+}
+
+#cartIcon{
+    position: relative;
+}
+
+.countCart{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -10px;
+    right: -10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #802e0381;
+}
+.toastIndex{
+     position: fixed !important;
+     right: -30px !important;
+     top: 100px !important;
+     bottom: auto !important;
+
+}
